@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Features.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>Features</title>
+    <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo-title">
+            <img src="https://www.logogenie.net/icons/preview/5013" alt="logo">
+            <p>SMARTPHONE</p>
+        </div>
+
+        <div class="navbar">
+            <a class="home" href="../index.html">Home</a>
+            <a class="about" href="../AboutPage/About.html">About</a>
+            <a class="blog" href="../BlogPage/Blog.html">Blog</a>
+            <a class="work" href="../WorkPage/Work.html">Work</a>
+            <a class="features">Features</a>
+            <a class="contact" href="../ContractPage/Contract.html">Contact</a>
+        </div>
+
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn"><i class="fas fa-bars"></i></button>
+            <div id="myDropdown" class="dropdown-content">
+                <a class="home" href="../HomePage/HomePage.html">Home</a>
+                <a class="about" href="../AboutPage/About.html">About</a>
+                <a class="blog" href="../BlogPage/Blog.html">Blog</a>
+                <a class="work" href="../WorkPage/Work.html">Work</a>
+                <a class="features">Features</a>
+                <a class="contact" href="../ContractPage/Contract.html">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="sub-navbar">
+        Home / Features
+    </div>
+
+    <div class="content">
+        <div class="pricing-tables">
+            <h2>PRICING TABLES EXAMPLES</h2>
+            <p>Well, what more can i really say? This an example of pricing tables so you can gwt an idea of what that
+                would look like. The idea is simple enough, don't you?
+            </p>
+        </div>
+
+        <div class="snd-content">
+            <div class="plans">
+                <div class="trial-plan plan">
+                    <h2>Trial plan</h2>
+                    <p class="per-month"><span>$0</span> / month</p>
+                    <p>Limited Access to App</p>
+                    <p>1 User</p>
+                    <p>1GB of Storge</p>
+                    <button>Sign Up Now</button>
+                </div>
+
+                <div class="small-plan plan">
+                    <h2>Small plan</h2>
+                    <p class="per-month"><span>$5</span> / month</p>
+                    <p>Full Access to App</p>
+                    <p>3 Users</p>
+                    <p>20GB of Storge</p>
+                    <button>Sign Up Now</button>
+                </div>
+
+                <div class="big-plan plan">
+                    <h2>Big plan</h2>
+                    <p class="per-month"><span>$10</span> / month</p>
+                    <p>Full Access to App</p>
+                    <p>Unlimited Users</p>
+                    <p>10GB of Storge</p>
+                    <button>Sign Up Now</button>
+                </div>
+            </div>
+
+            <div class="search-categories">
+                <div class="categories">
+                    <h3>Categories</h3>
+                    <p><i class="fa fa-greater-than"></i> Typgraphy</p>
+                    <hr>
+                    <p><i class="fa fa-greater-than"></i> Elements</p>
+                    <hr>
+                    <p><i class="fa fa-greater-than"></i> Full Width</p>
+                    <hr>
+                    <p><i class="fa fa-greater-than"></i> Pricing Tables</p>
+                    <hr>
+                    <p><i class="fa fa-greater-than"></i> Right Sidebar</p>
+                    <hr>
+                    <p><i class="fa fa-greater-than"></i> Left Sidebar</p>
+                    <hr>
+                    <p><i class="fa fa-greater-than"></i> 404 Page</p>
+                </div>
+
+                <hr>
+
+                <div class="text-blurb">
+                    <h3>Text Blurb</h3>
+                    <p>Lorem ipasum dolor sit amet. consectetur adipicing elit. Present trmpus eleifend risus ut congue.
+                        Pellentesque nec lacus elit.
+                    </p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <a href="https://www.instagram.com/accounts/login/" class="instagram media"><img
+                src="https://cdn.iconscout.com/icon/free/png-256/free-instagram-1796351-1524232.png?f=webp&w=128"
+                alt="instgram"></a>
+        <a href="https://twitter.com/login" class="twitter media"><img
+                src="https://icons.iconarchive.com/icons/fa-team/fontawesome-brands/256/FontAwesome-Brands-Square-Twitter-icon.png"
+                alt="instgram"></a>
+        <a href="https://www.facebook.com/?locale=ar_AR" class="facebook media"><img
+                src="https://icons.iconarchive.com/icons/fa-team/fontawesome-brands/512/FontAwesome-Brands-Facebook-icon.png"
+                alt="instgram"></a>
+        <a href="https://www.linkedin.com/login/ar" class="linkedin media"><img
+                src="https://www.nicepng.com/png/full/18-184936_linkedin-clipart-icon-grunge-instagram-logo.png"
+                alt="instgram"></a>
+    </div>
+</body>
+
+</html>

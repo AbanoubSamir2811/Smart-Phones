@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Phone</title>
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo-title">
+            <img src="https://www.logogenie.net/icons/preview/5013" alt="logo">
+            <p>SMARTPHONE</p>
+        </div>
+
+        <div class="navbar">
+            <a class="home">Home</a>
+            <a class="about" href="./AboutPage/About.html">About</a>
+            <a class="Blog" href="./BlogPage/Blog.html">Blog</a>
+            <a class="work" href="./WorkPage/Work.html">Work</a>
+            <a class="features" href="./FeaturesPage/Features.html">Features</a>
+            <a class="contact" href="./ContractPage/Contract.html">Contact</a>
+        </div>
+
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn"><i class="fas fa-bars"></i></button>
+            <div id="myDropdown" class="dropdown-content">
+                <a class="home">Home</a>
+                <a class="about" href="../AboutPage/About.html">About</a>
+                <a class="Blog" href="../BlogPage/Blog.html">Blog</a>
+                <a class="work" href="../WorkPage/Work.html">Work</a>
+                <a class="features" href="../FeaturesPage/Features.html">Features</a>
+                <a class="contact" href="../ContractPage/Contract.html">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="welcome-page">
+            <div class="right-content">
+                <h1>A really catchy header to get your business aspects off the ground and running.</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus eleifend risus ut congue.
+                    Pellentesque nec lacus elit. Pellentesqueconvallis nisi ac augue pharetra eu tristique consequat.
+                    Mauris ornare tempor nulla, vel sagidiam convallis eget. Ut ultricies ornare ui, accumsan diam
+                    convallis eget</p>
+                <button>Contact Us Today</button>
+            </div>
+            <div class="left-content">
+                <img src="https://research.com/resized/uploads/mobile_vs_desktop_usage_1_64f8b72a0f.jpg?format=large"
+                    alt="home">
+            </div>
+        </div>
+        <div class="bottom-content">
+            <div class="real-time">
+                <i class="fas fa-chart-bar"><span>Real time stats, right away.</span></i>
+                <p>There are many variations of passages or lorem ipsum available, but the majority have been alteration
+                    in some form by humor.</p>
+            </div>
+
+            <div class="options">
+                <i class="fa fa-cog" aria-hidden="true"><span>Opions that go on forever.</span></i>
+                <p>There are many variations of passages or lorem ipsum available, but the majority have been alteration
+                    in some form by humor.</p>
+            </div>
+
+            <div class="full-customer">
+                <i class="fa fa-phone"><span>Full customer support, always.</span></i>
+                <p>There are many variations of passages or lorem ipsum available, but the majority have been alteration
+                    in some form by humor.</p>
+            </div>
+
+            <div class="dashboard">
+                <i class="fa fa-palette"><span>Dashboard, we've got that too.</span></i>
+                <p>There are many variations of passages or lorem ipsum available, but the majority have been alteration
+                    in some form by humor.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <a href="https://www.instagram.com/accounts/login/" class="instagram media"><img
+                src="https://cdn.iconscout.com/icon/free/png-256/free-instagram-1796351-1524232.png?f=webp&w=128"
+                alt="instgram"></a>
+        <a href="https://twitter.com/login" class="twitter media"><img
+                src="https://icons.iconarchive.com/icons/fa-team/fontawesome-brands/256/FontAwesome-Brands-Square-Twitter-icon.png"
+                alt="instgram"></a>
+        <a href="https://www.facebook.com/?locale=ar_AR" class="facebook media"><img
+                src="https://icons.iconarchive.com/icons/fa-team/fontawesome-brands/512/FontAwesome-Brands-Facebook-icon.png"
+                alt="instgram"></a>
+        <a href="https://www.linkedin.com/login/ar" class="linkedin media"><img
+                src="https://www.nicepng.com/png/full/18-184936_linkedin-clipart-icon-grunge-instagram-logo.png"
+                alt="instgram"></a>
+    </div>
+</body>
+
+</html>

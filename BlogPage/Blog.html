@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Blog.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>Blog</title>
+    <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo-title">
+            <img src="https://www.logogenie.net/icons/preview/5013" alt="logo">
+            <p>SMARTPHONE</p>
+        </div>
+
+        <div class="navbar">
+            <a class="home" href="../index.html">Home</a>
+            <a class="about" href="../AboutPage/About.html">About</a>
+            <a class="blog">Blog</a>
+            <a class="work" href="../WorkPage/Work.html">Work</a>
+            <a class="features" href="../FeaturesPage/Features.html">Features</a>
+            <a class="contact" href="../ContractPage/Contract.html">Contact</a>
+        </div>
+
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn"><i class="fas fa-bars"></i></button>
+            <div id="myDropdown" class="dropdown-content">
+                <a class="home" href="../HomePage/HomePage.html">Home</a>
+                <a class="about" href="../AboutPage/About.html">About</a>
+                <a class="blog">Blog</a>
+                <a class="work" href="../WorkPage/Work.html">Work</a>
+                <a class="features" href="../FeaturesPage/Features.html">Features</a>
+                <a class="contact" href="../ContractPage/Contract.html">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="sub-navbar">
+        Home / Blog
+    </div>
+
+    <div class="content">
+        <div class="our-blog">
+            <h1>OUR BLOG & IDEAS</h1>
+            <p>Some days have genius. This is where we tend to write them down. Take note so you can feel as smart as us
+                one day.</p>
+        </div>
+
+        <div class="all-portfolio">
+            <div class="top-portfolio">
+                <div class="informations">
+                    <i class="fa fa-user"> Abanoub Samir</i>
+                    <i class="fas fa-calendar-alt"> November 21, 2012</i>
+                    <i class="fa fa-comment"> 12 Comments</i>
+                    <i class="fa fa-tag"> Branding, News, Updates</i>
+                </div>
+
+                <div class="about-portfolio">
+                    <img src="https://research.com/resized/uploads/mobile_vs_desktop_usage_1_64f8b72a0f.jpg?format=large"
+                        alt="portfolio">
+                    <h2>We've recently update our braning portfolio section.</h2>
+                    <p>Lorem ipasum dolor sit amet. consectetur adipicing elit. Pellentesque convallis nisi ac augue
+                        pharetra eu triatique consequent. Mauris ornare tempor nulla, velsagittis diam convallis eget.
+                        Ut ultricies ornare dui, ac accumsan diam convallis eget. Lorem ipsum dolor sit amet.
+                        consectetur adipicing elit.
+                    </p>
+                    <button>Read More</button>
+                </div>
+            </div>
+
+            <div class="bottom-portfolio">
+                <div class="information">
+                    <i class="fa fa-user"> Abanoub Samir</i>
+                    <i class="fas fa-calendar-alt"> November 21, 2012</i>
+                    <i class="fa fa-comment"> 12 Comments</i>
+                    <i class="fa fa-tag"> Branding, News, Updates</i>
+                </div>
+
+                <div class="snd-portfolio">
+                    <h2>Vel sagittis diam convallis eget. Ut ultricies ornare dui</h2>
+                    <p>Lorem ipasum dolor sit amet. consectetur adipicing elit. Pellentesque convallis nisi ac augue
+                        pharetra eu triatique consequent. Mauris ornare tempor nulla, velsagittis diam convallis eget.
+                        Ut ultricies ornare dui, ac accumsan diam convallis eget. Lorem ipsum dolor sit amet.
+                        consectetur adipicing elit.
+                    </p>
+                </div>
+            </div>
+
+            <div class="search-categories">
+                <div>
+                    <input type="text" placeholder="Search">
+                    <hr>
+                </div>
+
+                <div class="categories">
+                    <h3>Categories</h3>
+                    <p><i class="fa fa-greater-than"></i> Typgraphy</p>
+                    <hr>
+                    <p><i class="fa fa-greater-than"></i> Elements</p>
+                    <hr>
+                    <p><i class="fa fa-greater-than"></i> Full Width</p>
+                    <hr>
+                    <p><i class="fa fa-greater-than"></i> Pricing Tables</p>
+                    <hr>
+                    <p><i class="fa fa-greater-than"></i> Right Sidebar</p>
+                    <hr>
+                    <p><i class="fa fa-greater-than"></i> Left Sidebar</p>
+                    <hr>
+                    <p><i class="fa fa-greater-than"></i> 404 Page</p>
+                </div>
+                <hr>
+                <div class="text-blurb">
+                    <h3>Text Blurb</h3>
+                    <p>Lorem ipasum dolor sit amet. consectetur adipicing elit. Present trmpus eleifend risus ut congue.
+                        Pellentesque nec lacus elit.
+                    </p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <a href="https://www.instagram.com/accounts/login/" class="instagram media"><img
+                src="https://cdn.iconscout.com/icon/free/png-256/free-instagram-1796351-1524232.png?f=webp&w=128"
+                alt="instgram"></a>
+        <a href="https://twitter.com/login" class="twitter media"><img
+                src="https://icons.iconarchive.com/icons/fa-team/fontawesome-brands/256/FontAwesome-Brands-Square-Twitter-icon.png"
+                alt="instgram"></a>
+        <a href="https://www.facebook.com/?locale=ar_AR" class="facebook media"><img
+                src="https://icons.iconarchive.com/icons/fa-team/fontawesome-brands/512/FontAwesome-Brands-Facebook-icon.png"
+                alt="instgram"></a>
+        <a href="https://www.linkedin.com/login/ar" class="linkedin media"><img
+                src="https://www.nicepng.com/png/full/18-184936_linkedin-clipart-icon-grunge-instagram-logo.png"
+                alt="instgram"></a>
+    </div>
+</body>
+
+</html>
